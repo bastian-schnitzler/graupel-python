@@ -465,7 +465,7 @@ Schalter bleibt an seinem Platz (Q-010, §16.10), Q9 Version als Name + Gültigk
 ## Auffälligkeiten (Bestandsaufnahme, Stand nach APP-S2)
 
 - `graupel/data/api.py` definiert die Klasse `MeteogramAPI` zweimal (Zeile 20 und 273); die erste ist toter Code.
-- Die Projekt-URLs in `pyproject.toml` zeigen auf `bastian-schnitzler/graupel`, das Repo heißt `meteo`.
+- Die Projekt-URLs in `pyproject.toml` zeigen auf `bastian-schnitzler/graupel-python`, das Repo heißt `meteo`.
 - Das Wurzel-`Makefile` ist auf die lokale WSL-Umgebung zugeschnitten (`python.exe`, `uv.exe`) und enthält Reste
   einer anderen Vorlage (`lint`/`type` auf `./*.py ./llm/`, `LLM_API_TEST`, `index`); `Makefile.public` ist die
   allgemeine Variante.

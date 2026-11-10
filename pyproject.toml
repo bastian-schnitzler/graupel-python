@@ -40,9 +40,9 @@ classifiers = [
 
 
 [project.urls]
-Homepage = "https://github.com/bastian-schnitzler/graupel"
-Repository = "https://github.com/bastian-schnitzler/graupel"
-Issues = "https://github.com/bastian-schnitzler/graupel/issues"
+Homepage = "https://github.com/bastian-schnitzler/graupel-python"
+Repository = "https://github.com/bastian-schnitzler/graupel-python"
+Issues = "https://github.com/bastian-schnitzler/graupel-python/issues"
 
 [tool.black]
 line-length = 79
