@@ -110,7 +110,15 @@ export const LocationSelector: React.FC<LocationSelectorProps> = ({
   const searchRequestIdRef = useRef<number>(0);
   const isUserTypingRef = useRef<boolean>(false);
 
+  // Only a changed location replaces the field text. On mount the field
+  // already holds `shownName`; resetting it there would drop text typed
+  // between the first paint and this effect (flaky on slow machines).
+  const lastShownNameRef = useRef<string>(shownName);
   useEffect(() => {
+    if (lastShownNameRef.current === shownName) {
+      return;
+    }
+    lastShownNameRef.current = shownName;
     isUserTypingRef.current = false;
     setSearchTerm(shownName);
   }, [shownName]);
